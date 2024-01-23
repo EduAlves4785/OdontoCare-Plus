@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import {Menu} from './styles' 
 import {MdOutlineMenu,MdMenuOpen} from 'react-icons/md'
 
+import { Link } from "react-router-dom";
+
 export const MenuHamburger = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
@@ -18,9 +20,9 @@ export const MenuHamburger = () => {
         </label>
             <div id="menu" className={menuOpen ? 'open' : ''}>
                 <ul>
-                    <li><a href="">Sobre nós</a></li>
-                    <li><a href="">Especialidades</a></li>
-                    <li><a href="">Entre em contato</a></li>
+                    <li><Link to="/OdontoCare-Plus/sobre">Sobre nós</Link></li>
+                    <li><Link to="/OdontoCare-Plus/especialidades">Especialidades</Link></li>
+                    <li><Link to="/OdontoCare-Plus/contato">Entre em contato</Link></li>
                 </ul>
             </div>
     </Menu>

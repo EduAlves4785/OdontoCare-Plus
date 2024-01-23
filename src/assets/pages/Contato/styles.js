@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Content = styled.div`
   width: 100%;
-  height: 30rem;
+  height: 32rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +25,7 @@ export const Content = styled.div`
 
   @media only screen and (max-width: 700px) {
     & {
-      max-height: 50rem;
+      height: 32rem;
     }
 
     .itens {
@@ -39,7 +39,7 @@ export const Content = styled.div`
 `;
 
 export const Form = styled.div`
-  width: 350px;
+ width: 350px;
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -51,30 +51,33 @@ export const Form = styled.div`
     font-size: 16px;
   }
 
-  input {
-    width: 90%;
+  input,
+  textarea {
+    width: 100%;
     padding: 8px;
     font-size: 14px;
     border-radius: 4px;
     border: 1px solid #ccc;
+    box-sizing: border-box; 
   }
 
   textarea {
-    width: 90%;
-    height: 40px;
-    padding: 8px;
-    font-size: 14px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+    height: 80px; 
   }
 
   button {
-    width: 50%;
+    width: 100%;
     padding: 10px;
     font-size: 16px;
     background-color: #4caf50;
     color: #fff;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 10px; 
+  }
+
+  @media only screen and (max-width: 700px) {
+    width: 90%; 
+    margin: 0 auto; 
   }
 `;
