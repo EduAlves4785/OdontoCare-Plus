@@ -39,45 +39,64 @@ export const Content = styled.div`
 `;
 
 export const Form = styled.div`
- width: 350px;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem;
-  border: 1px solid #ccc;
+  background-color: #F2F2F2;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  div{
+    width: 18rem;
+    padding:.5rem;
+    margin-top: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  label {
-    display: block;
-    margin: 10px 0;
-    font-size: 16px;
+    input{
+      margin-left: .5rem;
+      border-radius: 5px;
+      border: none;
+      width: 80%;
+      padding:.3rem;
+    }
+
+    textarea{
+      margin-left: .5rem;
+      border: none;
+    }
+
   }
 
-  input,
-  textarea {
-    width: 100%;
-    padding: 8px;
-    font-size: 14px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    box-sizing: border-box; 
-  }
-
-  textarea {
-    height: 80px; 
-  }
-
-  button {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #4caf50;
-    color: #fff;
-    border-radius: 4px;
+  button{
     cursor: pointer;
-    margin-top: 10px; 
+    padding: .3rem;
+    width: 8rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 2rem;
+    background-color: #4FADB8;
+    transition: .3s ease-in-out;
   }
 
-  @media only screen and (max-width: 700px) {
-    width: 90%; 
-    margin: 0 auto; 
+  button:hover{
+    background-color:#5FCFDB;
+  }
+
+  @media only screen and (max-width: 700px){
+    &{
+      width: 89%;
+      height: 18rem;
+    }
+
+    div{
+      width: 15rem;
+      input{}
+    }
   }
 `;

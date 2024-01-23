@@ -2,6 +2,7 @@ import React from 'react'
 import { Navbar } from '../../components/Navbar'
 import {Content} from './styles'
 import { Footer } from '../../components/Footer'
+import { Link } from "react-router-dom";
 
 import cirurgia from '../../img/cirurgia.jpg'
 import periodontia from '../../img/periodontia.jpg'
@@ -34,19 +35,19 @@ export const Home = () => {
               <div className="especialidades-box">
                   <div>
                     <img src={odontologia} alt="Odontologia" />
-                    <a href="">Ortodontia Geral</a>
+                    <Link to="/OdontoCare-Plus/especialidades">Ortodontia Geral</Link>
                   </div>
                   <div>
                     <img src={periodontia} alt="Periodontia" />
-                    <a href="">Periodontia</a>
+                    <Link to="/OdontoCare-Plus/especialidades">Periodontia</Link>
                   </div>
                   <div>
                     <img src={endodontia} alt="Endodontia" />
-                    <a href="">Endodontia</a>
+                    <Link to="/OdontoCare-Plus/especialidades">Endodontia</Link>
                   </div>
                   <div>
                     <img src={cirurgia} alt="Cirurgia Oral" />
-                    <a href="">Cirurgia Oral</a>
+                    <Link to="/OdontoCare-Plus/especialidades">Cirurgia Oral</Link>
                   </div>
               </div>
             </div>

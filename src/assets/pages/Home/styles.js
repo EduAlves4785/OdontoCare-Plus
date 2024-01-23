@@ -21,8 +21,7 @@ export const Content = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 1rem 0rem;
-    width: 98%;
+    width: 100%;
     height: 30rem;
     overflow: hidden;
     border-radius: 5px;
@@ -129,8 +128,8 @@ export const Content = styled.div`
 
       div {
         background-color: #f8f8f8;
-        width: 15rem;
-        height: 10rem;
+        width: 25rem;
+        height: 11rem;
         padding-bottom: 2rem;
         display: flex;
         flex-direction: column;
@@ -150,10 +149,14 @@ export const Content = styled.div`
           transform: scale(1.1);
           object-fit: cover;
           width: 500px;
-          height: 100px;
+          height: 140px;
+          filter: grayscale(.5);
         }
 
         &:hover {
+          img{
+            filter: grayscale(0);
+          }
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
         }
       }
@@ -221,11 +224,11 @@ export const Content = styled.div`
     }
 
     .cards-box {
-      width: 75rem;
-      padding: 2rem;
+      width: 98%;
+      padding: 1rem;
       height: 15rem;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
 
       .card {
         background-color: #eeeeee;

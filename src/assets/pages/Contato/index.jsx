@@ -18,32 +18,18 @@ export const Contato = () => {
         <h1>{message}</h1>
         <div className="itens">
           <Form  style={{ display: message !== "Ligamos para você" ? "none" : "block" }}> 
-            <label>
-              Nome:
-              <input
-                type="text"
-                name="name"
-              />
-            </label>
-            <br />
-
-            <label>
-              Email:
-              <input
-                type="email"
-                name="email"
-              />
-            </label>
-            <br />
-
-            <label>
-              Mensagem:
-              <textarea
-                name="message"
-              />
-            </label>
-            <br />
-
+            <div>
+              <label htmlFor="nome">Nome:</label>
+              <input type="text" name="nome" required/>
+            </div>
+            <div>
+              <label htmlFor="email">Email:</label>
+              <input type="text" name="email" required/>
+            </div>
+            <div>
+              <label htmlFor="mensagem">Mensagem:</label>
+              <textarea name="mensagem"cols="32" rows="6"></textarea>
+            </div>
             <button onClick={()=>mudarMensagem()}>Enviar</button>
           </Form>
           <img src={atendente} alt="Atendente sorrindo" />
