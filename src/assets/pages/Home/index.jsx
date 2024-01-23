@@ -34,7 +34,7 @@ export const Home = () => {
               <div className="especialidades-box">
                   <div>
                     <img src={odontologia} alt="Odontologia" />
-                    <a href="">Odontologia Geral</a>
+                    <a href="">Ortodontia Geral</a>
                   </div>
                   <div>
                     <img src={periodontia} alt="Periodontia" />
