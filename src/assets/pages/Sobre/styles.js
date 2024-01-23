@@ -35,6 +35,7 @@ export const Content=styled.div`
         padding: 1rem;
         display: flex;
         border-radius: 5px;
+        align-items: center;
         justify-content: space-between;
         background-color: #F2F2F2;
 
@@ -58,6 +59,7 @@ export const Content=styled.div`
     }
 
     .especialidades{
+        align-items: center;
         width: 60rem;
         gap: 3rem;
         height: 20rem;
@@ -105,6 +107,7 @@ export const Content=styled.div`
             width: 87%;
             height: 32rem;
             gap: 1rem;
+            justify-content: center;
             flex-direction: column;
 
             div{
@@ -121,6 +124,7 @@ export const Content=styled.div`
         }
 
         .especialidades{
+            justify-content: center;
             width: 87%;
             height: 30rem;
             gap: 1rem;

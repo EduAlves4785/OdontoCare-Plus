@@ -10,7 +10,7 @@ export const Rodape = styled.div`
   position: relative;
   left: 0;
   bottom: 0;
-  margin-top: 1rem;
+  margin-top: .5rem;
   background-color:#F2E289;
   font-size: 18px;
   text-align: center;
