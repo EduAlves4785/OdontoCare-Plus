@@ -510,7 +510,7 @@ Error generating stack: `+o.message+`
   position: relative;
   left: 0;
   bottom: 0;
-  margin-top: 1rem;
+  margin-top: .5rem;
   background-color:#F2E289;
   font-size: 18px;
   text-align: center;
@@ -559,6 +559,7 @@ Error generating stack: `+o.message+`
         padding: 1rem;
         display: flex;
         border-radius: 5px;
+        align-items: center;
         justify-content: space-between;
         background-color: #F2F2F2;
 
@@ -582,6 +583,7 @@ Error generating stack: `+o.message+`
     }
 
     .especialidades{
+        align-items: center;
         width: 60rem;
         gap: 3rem;
         height: 20rem;
@@ -629,6 +631,7 @@ Error generating stack: `+o.message+`
             width: 87%;
             height: 32rem;
             gap: 1rem;
+            justify-content: center;
             flex-direction: column;
 
             div{
@@ -645,6 +648,7 @@ Error generating stack: `+o.message+`
         }
 
         .especialidades{
+            justify-content: center;
             width: 87%;
             height: 30rem;
             gap: 1rem;
